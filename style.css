@@ -50,6 +50,31 @@ img {
 .top {
     width: 98%;
     margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.view {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.405);
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in 0.6s;
+}
+
+.view:hover {
+    opacity: 1;
+}
+
+#view {
+    width: 40px;
+    opacity: 1;
 }
 
 .bottom {
